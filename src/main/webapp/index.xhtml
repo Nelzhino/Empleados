@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+
+	<h2>Listado de Empleados #{empleadoView.message}</h2>
+
+	<h:dataTable value="#{empleadoView.empleados}" var="o">
+		<h:column>#{o.id}</h:column>
+
+		<h:column>#{o.nombre}</h:column>
+
+		<h:column>#{o.apellido}</h:column>
+
+		<h:column>#{o.salario}</h:column>
+
+	</h:dataTable>
+
+</h:body>
+</html>
